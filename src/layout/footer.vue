@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-footer lg:py-[48px] lg:px-[96px] s:py-[33px] s:px-[31px]">
+    <div class="bg-footer md:py-[48px] md:px-[96px] s:py-[33px] s:px-[31px]">
         <div class="border-b-2 border-lightgray pb-[20px] flex items-center justify-between mb-[40px]">
             <div class="flex items-center gap-3">
                 <div class="md:w-[46px] s:w-[40px]">

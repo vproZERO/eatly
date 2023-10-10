@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:py-[48px]  lg:px-[96px] s:py-[33px] s:px-[25px]">
+  <div class="md:py-[48px]  md:px-[96px] s:py-[33px] s:px-[25px]">
     <div
       class="pb-[24px] flex items-center s:w-[332px] xs:w-[400px] md:w-[100%] s:mx-auto s:justify-between md:justify-between border-b-2 border-lightgray"
     >
@@ -53,7 +53,7 @@
         class="fixed z-40  md:hidden  bg-opacity-40 bg-lightgray top-0 bottom-0 left-0 right-0"
       >
         <div
-          class="sm:w-[350px] s:w-[200px] overflow-y-auto bg-white fixed right-0  top-0 p-5 px-10"
+          class="sm:w-[350px] s:w-[200px] overflow-y-auto bg-white fixed right-0  top-5 bottom-5 p-5 px-10"
         >
           <button  v-on:click="isOpen = !isOpen"
             class="absolute top-3 right-5 s:w-7 s:h-7 rounded-full hover:bg-gray hover:text-white"
