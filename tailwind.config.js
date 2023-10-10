@@ -16,6 +16,7 @@ export default {
       purple: "#6C5FBC",
       gray: "#606060",
       lightgray: "#CDCDCD",
+      input : '#F5F5F5',
       black: "#201F1F",
       lightblack: "#323142",
       yellow: "#DAA31A",
