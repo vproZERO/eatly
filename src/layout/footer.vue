@@ -26,18 +26,18 @@
         <div class="flex -items-center justify-between">
             <p class="text-gray s:mx-auto md:mx-0 s:text-[13px] s:leading-[19px] md:text-[17px] md:leading-[25px]">© 2023 EATLY All Rights Reserved.</p>
             <div class="flex items-center md:gap-[38px] md:flex s:hidden">
-                <div class="md:w-[15px] md:h-[15px]">
+                <a href="#" class="md:w-[15px] md:h-[15px]">
                     <img src="../assets/instagramm.png" alt="instagramm img">
-                </div>
-                <div class="md:w-[15px] md:h-[15px]">
+                </a>
+                <a href="#" class="md:w-[15px] md:h-[15px]">
                     <img src="../assets/in.png" alt="IN img">
-                </div>
-                <div class="md:w-[15px] md:h-[15px]">
+                </a>
+                <a href="#" class="md:w-[15px] md:h-[15px]">
                     <img src="../assets/facebook.png" alt="facebook img">
-                </div>
-                <div class="md:w-[15px] md:h-[15px]">
+                </a>
+                <a href="#" class="md:w-[15px] md:h-[15px]">
                     <img src="../assets/twitter.png" alt="twitter img">
-                </div>
+                </a>
             </div>
         </div>
     </div>
