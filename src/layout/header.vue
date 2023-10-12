@@ -3,12 +3,12 @@
     <div
       class="pb-[24px] flex items-center s:w-[332px] xs:w-[400px] md:w-[100%] s:mx-auto s:justify-between md:justify-between border-b-2 border-lightgray"
     >
-      <div class="flex items-center gap-3">
+      <a href="#/home" class="flex items-center gap-3">
         <div class="md:w-[46px] md:h-[42px] s:w-[40px] s:h-[35px]">
           <img src="../assets/logo.png" alt="logo" />
         </div>
         <h2 class="font-bold text-purple text-[21px] leading-[27px]">eatly</h2>
-      </div>
+      </a>
       <ul class="flex items-center lg:gap-[53px] md:gap-[38px]  s:hidden md:flex">
         <li>
           <a
