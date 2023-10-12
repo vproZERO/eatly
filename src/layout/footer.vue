@@ -1,12 +1,12 @@
 <template>
     <div class="bg-footer md:py-[48px] md:px-[96px] s:py-[33px] s:px-[31px]">
         <div class="border-b-2 border-lightgray pb-[20px] flex items-center justify-between mb-[40px]">
-            <div class="flex items-center gap-3">
+            <a href="#" class="flex items-center gap-3">
                 <div class="md:w-[46px] s:w-[40px]">
                     <img src="../assets/logo.png" alt="logo">
                 </div>
                 <h2 class="md:text-[20px] md:leading-[26px] text-purple font-bold">eatly</h2>
-            </div>
+            </a>
             <div class="flex items-center s:gap-[20px] md:hidden s:flex">
                 <div class="md:w-[15px] md:h-[15px]">
                     <img src="../assets/instagramm.png" alt="instagramm img">
