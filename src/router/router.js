@@ -1,9 +1,9 @@
 import { createRouter,createWebHashHistory } from "vue-router";
-import Home from '../pages/Home.vue'
 import Dishes from '../pages/dishes.vue'
 import SignIn from '../pages/signin.vue'
 import SignUp from '../pages/signup.vue'
 import Cart from '../pages/cart.vue'
+import Home from '../pages/home.vue'
 
 export  default createRouter({
         history:createWebHashHistory(),
