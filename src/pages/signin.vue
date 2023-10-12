@@ -38,9 +38,9 @@
             </li>
           </ul>
           <div class="">
-            <div class="w-7 h-7 mx-auto mb-10">
+            <a href="#/cart" class="block w-7 h-7 mx-auto mb-10">
                 <img src="../assets/cart.svg" alt="cart shopping">
-            </div>
+            </a>
             <button class="py-[17px] px-[26px] rounded-[17px] block mx-auto mb-10 w-full">
               <a
                 class="text-[17px] leading-[26px] font-bold capitalize text-gray"
@@ -60,7 +60,7 @@
       </div>
             </div>
             <p class="mb-3 capitalize text-center lg:w-[289px] mx-auto lg:text-[35px] lg:leading-[44px] font-semibold   xs:w-[218px] xs:text-[25px] xs:leading-[31px]">Sign In To eatly </p>
-            <form class="mb-5 lg:w-[382px] bg-input md:rounded-[14px] mx-auto flex items-center md:gap-[33px] md:py-[24px] md:pl-[23px]   xs:w-[271px] xs:gap-[23px] xs:py-[17px] xs:pl-[16px] s:rounded-[10px]">
+            <form class="mb-5 lg:w-[382px] bg-input md:rounded-[14px] mx-auto flex items-center md:gap-[33px] md:py-[24px] md:pl-[23px]   s:w-[271px] s:gap-[23px] s:py-[17px] s:pl-[16px] s:rounded-[10px]">
 
                 <div>
                     <img src="../assets/email.png" alt="email">
@@ -70,7 +70,7 @@
 
             </form>
 
-            <form class="mb-5 lg:w-[382px] bg-input md:rounded-[14px] mx-auto flex items-center md:gap-[33px] md:py-[24px] md:pl-[23px]   xs:w-[271px] xs:gap-[23px] xs:py-[17px] xs:pl-[16px] s:rounded-[10px]">
+            <form class="mb-5 lg:w-[382px] bg-input md:rounded-[14px] mx-auto flex items-center md:gap-[33px] md:py-[24px] md:pl-[23px]   s:w-[271px] s:gap-[23px] s:py-[17px] s:pl-[16px] s:rounded-[10px]">
 
 <div>
     <img src="../assets/lock.png" alt="email">

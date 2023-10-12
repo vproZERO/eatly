@@ -77,9 +77,9 @@
             </li>
           </ul>
           <div class="">
-            <div class="w-7 h-7 mx-auto mb-10">
+            <a href="#/cart" class="block w-7 h-7 mx-auto mb-10">
                 <img src="../assets/cart.svg" alt="cart shopping">
-            </div>
+            </a>
             <button class="py-[17px] px-[26px] rounded-[17px] block mx-auto mb-10 w-full">
               <a
                 class="text-[17px] leading-[26px] font-bold capitalize text-gray"
