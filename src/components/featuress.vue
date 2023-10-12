@@ -1,7 +1,7 @@
 <template>
-    <div class=" lg:mb-[194px]  xs:py-[34px] s:py-[99px] overflow-hidden bg-purple  ">
+    <div class="featuress_box lg:mb-[194px]  xs:py-[34px] s:py-[99px] overflow-hidden bg-purple  ">
         <div class="flex justify-between relative">
-            <ul class="md:flex items-center justify-between  lg:w-[942px] xs:w-[669px] xs:mx-auto lg:mx-auto s:block s:w-[263px] mx-auto ">
+            <ul class="md:flex items-center  justify-between  lg:w-[942px] xs:w-[669px] xs:mx-auto lg:mx-auto s:block s:w-[263px] mx-auto ">
                 <li class="md:border-r-2 border-lightgray lg:w-[263px] xs:w-[187px] s:w-[263px] mx-auto s:border-b-2 md:border-b-0 s:pb-[60px] md:pb-0 s:mb-[120px]">
                     <h3 class="font-bold lg:text-[43px] xs:text-[30px] lg:leading-[54px] xs:leading-[38px] xs:mx-auto xs:w-[74px] text-white lg:mb-10px mx-auto lg:w-[103px] s:w-[103px] s:text-[43px] s:leading-[54px]">10K+</h3>
                     <p class="lg:text-[14px] xs:text-[10px] xs:leading-[15px] lg:leading-[21px] lg:w-[163px] xs:w-[130px] font-semibold text-lightgray mx-auto text-center s:w-[161px] s:text-[14px] s:leading-[21px]">Satisfied Costumers All Great Over The World </p>
@@ -23,6 +23,8 @@ export default {
     
 }
 </script>
-<style lang="">
-    
+<style>
+    .featuress_box{
+        background-image: url('../assets/bg.png');
+    }
 </style>
