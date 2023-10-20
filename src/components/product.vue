@@ -1,6 +1,6 @@
 <template>
-    <div class="md:py-[100px] md:px-[96px] s:py-[31px] s:px-[25px]">
-        <div class="border-b-2 border-lightgray pb-[190px]">
+    <div class="md:py-[0px] md:px-[96px] s:py-[31px] s:px-[25px]">
+        <div class="border-b-2 border-lightgray pb-[90px]">
             <h2 class="mx-auto md:text-[45px] md:leading-[25px] capitalize font-semibold text-lightblack md:mb-[75px] md:w-[342px]   sm:text-[32px] sm:leading-[18px] sm:mb-[53px] sm:w-[243px]   s:text-[30px] s:leading-[36px] s:mb-[61px] s:w-[127px]">Our Top <span class="text-purple">Dishes</span></h2>
 
             <ul class="grid lg:grid-cols-5 md:grid-cols-3 md:gap-[30px] sm:gap-[21px] s:gap-[21px] s:grid-cols-2  sm:grid-cols-2 s:w-[375px]  mx-auto md:w-[750px]  lg:w-[1240px]">

@@ -1,5 +1,5 @@
 <template>
-  <div class="md:py-[48px]  md:px-[96px] s:py-[33px] s:px-[25px]">
+  <div class=" md:py-[48px]  md:px-[96px] s:py-[33px] s:px-[25px]">
     <div
       class="pb-[24px] flex items-center s:w-[332px] xs:w-[400px] md:w-[100%] s:mx-auto s:justify-between md:justify-between border-b-2 border-lightgray"
     >

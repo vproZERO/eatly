@@ -1,6 +1,6 @@
 <template>
-    <div class="md:py-[48px]  md:px-[96px] s:py-[33px] s:px-[25px] mb-[132px]">
-        <div class="md:flex items-center justify-between border-b-2 border-lightgray pb-[120px]">
+    <div class=" md:py-[48px]  md:px-[96px] s:py-[33px] s:px-[25px] mb-[32px]  ">
+        <div class=" lg:w-[1280px] xs:w-[700px] s:w-[360px] mx-auto md:flex items-center justify-around border-b-2 border-lightgray pb-[120px]">
             <div>
                 <h3 class="text-black font-bold lg:text-[50px] lg:leading-[58px] lg:w-[450px] lg:mb-[63px] md:text-[36px] md:leading-[41px] md:w-[320px] md:mb-[45px] s:mx-auto md:mx-0 s:text-[30px] s:leading-[34px] s:w-[240px] s:mb-[37px]">Premium <span class="text-purple">Quality</span> For Your Health</h3>
                 <ul class="list-disc">
@@ -21,6 +21,5 @@ export default {
     
 }
 </script>
-<style lang="">
-    
+<style >
 </style>

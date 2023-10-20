@@ -32,7 +32,7 @@ button{
     cursor: pointer;
 }
 .component{
-    width: 1530px;
+    width: full;
     margin: 0 auto;
 }
 

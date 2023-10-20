@@ -1,6 +1,6 @@
 <template>
     <div class="md:py-[50px] md:px-[96px] s:py-[31px] s:px-[25px]">
-        <div class="mx-auto lg:w-[1237px] bg-white s:w-[315px] xs:w-[400px] sm:w-[640px]  overflow-auto   md:rounded-[30px] s:rounded-[23px]">
+        <div class="mx-auto lg:w-[1237px] bg-white s:w-[315px] xs:w-[400px] sm:w-[500px]  overflow-auto   md:rounded-[30px] s:rounded-[23px]">
             <div>
                 <img src="../assets/chicken.png" alt="chicken image">
             </div>

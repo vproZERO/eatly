@@ -1,6 +1,6 @@
 <template>
     <div class="sm:py-[48px]  sm:px-[96px] s:py-[33px] s:px-[25px] xl:mb-[194px] xl:mt-[119px]">
-        <div class="md:flex s:block  xs:items-center xs:justify-between ">
+        <div class="lg:w-[1280px] mx-auto md:flex s:block  xs:items-center xs:justify-between ">
             <div>
                 <div class="s:mx-auto  sm:mx-auto md:mx-0 md:w-[300px] s:w-[142px]  sm:w-[163px] flex items-center sm:gap-[14px] s:gap-[12px] lg:gap-[20px] sm:mb-[12px] s:mb-[5px] lg:mb-[18px]">
                     <span class="block  lg:w-[54px] sm:bg-lightgray s:h-[1px] s:bg-black s:w-[33px] "></span>
