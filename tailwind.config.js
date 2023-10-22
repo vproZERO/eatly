@@ -26,6 +26,7 @@ export default {
       green: "#309D5B",
       body: "#F9F9F9",
       footer: "#EAEAEA",
+      blue: "#3b82f6"
     },
   },
   plugins: [],
