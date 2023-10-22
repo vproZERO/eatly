@@ -66,7 +66,7 @@
                     <img src="../assets/email.png" alt="email">
                 </div>
 
-                <input class="bg-inherit" type="email" placeholder="Email">
+                <input class="bg-inherit" type="email" id="email" name="email" v-model="email" placeholder="Email">
 
             </form>
 
@@ -76,7 +76,7 @@
     <img src="../assets/lock.png" alt="email">
 </div>
 
-<input class="bg-inherit" type="password" placeholder="Password">
+<input class="bg-inherit" type="password" id="password" name="password" v-model="password" placeholder="Password">
 
 </form>
 
@@ -84,7 +84,7 @@
         <a class="text-purple" href="#">Forget Password ?</a>
 </div>
 
-<button class="mb-5 s:w-[271px] lg:w-[382px]  mx-auto block bg-purple text-white rounded-[11px] py-[17px] px-[111px] mb-3">
+<button @click="loginAction()" :disabled="isSubmitting" type="button" class="mb-5 s:w-[271px] lg:w-[382px]  mx-auto block bg-purple text-white rounded-[11px] py-[17px] px-[111px] mb-3">
     Sign in
 </button>
 <div class="s:w-[271px] lg:w-[382px] mx-auto text-center mb-10">
@@ -108,12 +108,55 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
+import Swal from 'sweetalert2'
 export default {
+  name: 'Login',
     data : () => {
         return {
             isOpen : false,
-            onOpen : false
+            onOpen : false,
+            email: '',
+            password: '',
+            validationErrors: {},
+            isSubmitting: false
         }
+    },
+    created() {
+      if(localStorage.getItem('token') != "" &&localStorage.getItem('token') != null){
+        this.$router.push('/home')
+        Swal.fire({
+          icon: 'info',
+          title: 'Siz registratsiyadan otkansiz!',
+          showConfirmButton: false,
+          timer: 1500
+        })
+      }
+    },
+    methods: {
+      logoutAction() {
+        this.isSubmitting = true
+        let payload  = {
+          email: this.email,
+          password: this.password
+        }
+        axios.post('https://mock-api.binaryboxtuts.com/api/login', payload)
+        .then(response => {
+          localStorage.setItem('token' , response.data.token)
+          this.$router.push('/home')
+          return response
+        })
+        .catch(error => {
+          this.isSubmitting = false
+          if(error.response.data.errors != undefined) {
+            this.validationErrors = error.response.data.errors
+          }
+          if(error.response.data.error != undefined) {
+            this.validationErrors = error.response.data.error
+          }
+          return error
+        })
+      }
     }
 }
 </script>
