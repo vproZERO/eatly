@@ -220,7 +220,7 @@ export default {
         email: this.email,
         password: this.password
       }
-      axios.post('https://fakestoreapi.com/users', payload)
+      axios.post('https://mock-api.binaryboxtuts.com/api/register', payload)
       .then(response => {
         localStorage.setItem('token' , response.data.token)
         this.$router.push('/home')
