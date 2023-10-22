@@ -5,77 +5,79 @@
 
 
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul,ol{
+
+ul,
+ol {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     cursor: pointer;
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-button{
+
+button {
     background-color: inherit;
     border: none;
     cursor: pointer;
 }
-.component{
+
+.component {
     width: full;
     margin: 0 auto;
 }
 
 @media screen and (max-width:900px) {
-    .component{
+    .component {
         width: 900px;
         margin: 0 auto;
     }
-    
+
 }
 
 @media screen and (max-width: 600px) {
-    .component{
+    .component {
         width: 600px;
         margin: 0 auto;
     }
 }
+
 @media screen and (max-width: 400px) {
-    .component{
+    .component {
         width: 400px;
         margin: 0 auto;
     }
 }
+
 @media screen and (max-width: 200px) {
-    .component{
+    .component {
         width: 200px;
         margin: 0 auto;
     }
 }
 
 
-.get_box{
+.get_box {
     background-image: url(./assets/bg.png);
 }
 
 
-input{
-    background-color:inherit;
+input {
+    background-color: inherit;
 }
-
-
-
-
-
-
-

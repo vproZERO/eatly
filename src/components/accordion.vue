@@ -13,7 +13,7 @@
         :index="i"
         :key="i"
         :open="faq.open"
-        @toggleOpen=" toggleOpen"
+        @toggleOpen="toggleOpen"
       />
     </div>
   </div>
@@ -60,8 +60,8 @@ export default {
       this.faqs = this.faqs.map((faq, i) => {
         if (index === i) {
           faq.open = !faq.open;
-        }else{
-                faq.open = false
+        } else {
+          faq.open = false;
         }
 
         return faq;
@@ -71,45 +71,40 @@ export default {
 };
 </script>
 <style>
+.faq .question {
+  position: relative;
+  transition: all 0.4s linear;
+}
+.faq.open .question {
+  margin-block: 15px;
+}
+.faq.open .question::after {
+  transform: translateY(-50%) rotate(180deg);
+  background-image: url("../assets/minus.svg");
+}
 
-    .faq .question {
-        position: relative;
-        transition: all 0.4s linear;
-    }
-    .faq.open .question{
-        margin-block: 15px;
-    }
-    .faq.open .question::after{
-        transform: translateY(-50%) rotate(180deg);
-        background-image: url('../assets/minus.svg');
-    }
+.faq.open .answer {
+  opacity: 1;
+  max-height: 1000px;
+}
+.faq .question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%) rotate(0deg);
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/plus.svg");
+  background-position: center;
+  background-size: contain;
 
-    .faq.open .answer{
-        opacity: 1;
-        max-height: 1000px;
-    }
-    .faq .question::after{
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 0px;
-        transform: translateY(-50%) rotate(0deg);
-        width: 30px;
-        height: 30px;
-        background-image: url('../assets/plus.svg');
-        background-position: center;
-        background-size: contain;
-
-
-
-        transition: all 0.4s linear;
-    }
-    .faq .answer{
-        opacity: 0;
-        overflow-y: hidden;
-        max-height: 0;
-        transition: all 0.4s ease-out;
-    }
-
-
+  transition: all 0.4s linear;
+}
+.faq .answer {
+  opacity: 0;
+  overflow-y: hidden;
+  max-height: 0;
+  transition: all 0.4s ease-out;
+}
 </style>

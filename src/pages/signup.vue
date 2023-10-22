@@ -94,7 +94,7 @@
           v-model="name"
           placeholder="Full Name"
         />
-        <div v-if="validationErrors.name" >
+        <div v-if="validationErrors.name">
           <small class="text-danger">
             {{ validationErrors?.name[0] }}
           </small>
@@ -149,9 +149,9 @@
       </div>
 
       <button
-      @click="registerAction()"
-      :disabled="isSubmitting"
-      type="button"
+        @click="registerAction()"
+        :disabled="isSubmitting"
+        type="button"
         class="mb-5 s:w-[271px] lg:w-[382px] mx-auto block bg-purple text-white rounded-[11px] py-[17px] px-[111px] mb-3"
       >
         Sign in
@@ -186,55 +186,58 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
-import Swal from 'sweetalert2'
+import axios from "axios";
+import Swal from "sweetalert2";
 export default {
-
   data: () => {
     return {
       isOpen: false,
       onOpen: false,
-      name:'',
-      email:'',
-      password:'',
-      validationErrors:{},
-      isSubmitting:false,
+      name: "",
+      email: "",
+      password: "",
+      validationErrors: {},
+      isSubmitting: false,
     };
   },
   created() {
-    if(localStorage.getItem('token') != "" && localStorage.getItem('token') != null){
-      this.$router.push('/home')
+    if (
+      localStorage.getItem("token") != "" &&
+      localStorage.getItem("token") != null
+    ) {
+      this.$router.push("/home");
       Swal.fire({
-          icon: 'info',
-          title: 'Siz registratsiyadan otkansiz!',
-          showConfirmButton: false,
-          timer: 1500
-        })
+        icon: "info",
+        title: "Siz registratsiyadan otkansiz!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
     }
   },
   methods: {
     registerAction() {
-      this.isSubmitting = true
+      this.isSubmitting = true;
       let payload = {
         name: this.name,
         email: this.email,
-        password: this.password
-      }
-      axios.post('https://mock-api.binaryboxtuts.com/api/register', payload)
-      .then(response => {
-        localStorage.setItem('token' , response.data.token)
-        this.$router.push('/home')
-        
-        return response
-      })
-      .catch(error => {
-        this.isSubmitting = false
-        if(error.response.data.errors != undefined) {
-          this.validationErrors = error.response.data.errors
-        }
-        return error
-      })
-    }
+        password: this.password,
+      };
+      axios
+        .post("https://fakestoreapi.com/users", payload)
+        .then((response) => {
+          localStorage.setItem("token", response.data.token);
+          this.$router.push("/home");
+
+          return response;
+        })
+        .catch((error) => {
+          this.isSubmitting = false;
+          if (error.response.data.errors != undefined) {
+            this.validationErrors = error.response.data.errors;
+          }
+          return error;
+        });
+    },
   },
 };
 </script>
