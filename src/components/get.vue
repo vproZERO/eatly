@@ -8,7 +8,7 @@
             </form>
 
 
-            <div class="absolute lg:right-[72px] lg:top-[63px] lg:w-[274px] lg:h-[276px]   sm:top-[180px] sm:right-[180px]   s:w-[169px] s:h-[170px] s:top-[189px] s:right-[112px] ">
+            <div class="absolute lg:right-[72px] lg:top-[63px] lg:w-[274px] lg:h-[276px]   sm:top-[180px] sm:right-[180px]   s:w-[169px] s:h-[170px] s:top-[189px] s:right-[82px] ">
                 <img src="../assets/getimage.png" alt="get image">
             </div>
         </div>
