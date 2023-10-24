@@ -21,7 +21,7 @@
             <img class="" src="../assets/hearth.png" alt="hearth img" />
           </button>
           <div class="md:w-[201px] sm:w-[143px] s:w-[131px]">
-            <img src="{{product.image}}" alt="product image" />
+            <img src="" alt="product image" />
           </div>
           <p
             class="capitalize text-yellow bg-bgyellow text-center md:w-[63px] md:text-[11px] md:font-normal md:py-[2px] md:rounded-[4px] md:ml-[21px] sm:w-[41px] sm:text-[8px] sm:font-normal sm:rounded-[3px] sm:ml-[15px] s:w-[38px] s:text-[7px] s:font-normal s:rounded-[3px] s:ml-[14px]"
