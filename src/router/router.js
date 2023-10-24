@@ -8,10 +8,10 @@ import SignUp from '../pages/signup.vue'
 export default createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: '/home', component: Home, alias: '/' },
+    { path: '/home', component: Home,  },
     { path: '/dishes', component: Dishes },
-    { path: '/cart', component: Cart },
+    { path: '/cart/:id', component: Cart },
     { path: '/signin', component: SignIn },
-    { path: '/signup', component: SignUp }
+    { path: '/signup', component: SignUp , alias: '/'}
   ]
 })

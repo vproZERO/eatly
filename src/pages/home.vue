@@ -4,6 +4,7 @@
     <Hero />
     <Featuress />
     <Download />
+    <Product/>
     <Chicken />
     <Get />
     <Footer />
@@ -17,11 +18,13 @@ import Download from "../components/download.vue";
 import Chicken from "../components/chicken.vue";
 import Get from "../components/get.vue";
 import Footer from "../layout/footer.vue";
+import Product from '../components/product.vue'
 export default {
   components: {
     Header,
     Hero,
     Featuress,
+    Product,
     Download,
     Chicken,
     Get,

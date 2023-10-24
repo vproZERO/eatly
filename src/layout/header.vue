@@ -30,7 +30,7 @@
       <div
         class="flex items-center lg:gap-[20px] xl:gap-[35px] s:hidden md:flex"
       >
-        <a href="#/cart" class="w-7 h-7">
+        <a href="#/cart/:id" class="w-7 h-7">
           <img src="../assets/cart.svg" alt="cart shopping" />
         </a>
         <button class="py-[17px] px-[26px] rounded-[17px]">
@@ -63,11 +63,11 @@
         class="fixed z-40 md:hidden bg-opacity-40 bg-lightgray top-0 bottom-0 left-0 right-0"
       >
         <div
-          class="sm:w-[350px] s:w-[200px] overflow-y-auto bg-white fixed right-0 top-5 bottom-5 p-5 px-10"
+          class="sm:w-[400px] s:w-[300px]  bg-white fixed rounded-xl right-0 top-1 bottom-1 p-5 px-10"
         >
           <button
             v-on:click="isOpen = !isOpen"
-            class="absolute top-3 right-5 s:w-7 s:h-7 rounded-full hover:bg-gray hover:text-white"
+            class="absolute top-3 right-10 s:w-7 s:h-7 rounded-full hover:bg-gray hover:text-white"
           >
             X
           </button>

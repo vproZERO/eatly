@@ -13,7 +13,7 @@
         <li
           v-for="product in products"
           :key="product"
-          class="relative bg-white md:w-[224px] md:rounded-[34px] md:pt-[23px] md:pb-[29px] md:pl-[5px] md:pr-[17px] md:mb-[30px] sm:mb-[21px] s:mb-[41px] sm:w-[159px] sm:rounded-[24px] sm:pt-[16px] sm:pb-[21px] sm:pl-[4px] sm:pr-[12px] s:w-[146px] s:rounded-[22px] s:pt-[15px] s:pb-[19px] s:pl-[3px] s:pr-[11px]"
+          class="relative bg-white md:w-[224px] md:rounded-[34px] md:pt-[23px] md:pb-[29px] md:pl-[5px] md:pr-[17px] md:mb-[30px] sm:mb-[21px] s:mb-[41px] sm:w-[159px] sm:rounded-[24px] sm:pt-[16px] sm:pb-[21px] sm:pl-[4px] sm:pr-[12px] s:w-[146px] s:rounded-[22px] s:pt-[15px] s:pb-[19px] s:pl-[3px] s:ml-[10px] xs:ml-[0px] s:pr-[11px]"
         >
           <button
             class="absolute md:right-[21px] sm:right-[15px] s:right-[14px]"
@@ -21,10 +21,10 @@
             <img class="" src="../assets/hearth.png" alt="hearth img" />
           </button>
           <div class="md:w-[201px] sm:w-[143px] s:w-[131px]">
-            <img src="{{product.image}}" alt="product image" />
+            <img src={{product.image}} alt="product image" />
           </div>
           <p
-            class="capitalize text-yellow bg-bgyellow text-center md:w-[43px] md:text-[11px] md:font-normal md:py-[2px] md:rounded-[4px] md:ml-[21px] sm:w-[41px] sm:text-[8px] sm:font-normal sm:rounded-[3px] sm:ml-[15px] s:w-[38px] s:text-[7px] s:font-normal s:rounded-[3px] s:ml-[14px]"
+            class="capitalize text-yellow bg-bgyellow text-center md:w-[63px] md:text-[11px] md:font-normal md:py-[2px] md:rounded-[4px] md:ml-[21px] sm:w-[41px] sm:text-[8px] sm:font-normal sm:rounded-[3px] sm:ml-[15px] s:w-[38px] s:text-[7px] s:font-normal s:rounded-[3px] s:ml-[14px]"
           >
             {{ product.category }}
           </p>
@@ -62,7 +62,7 @@
                 >.99</span
               >
             </p>
-            <button
+            <router-link :to="`/cart/${product.id}`"
               class="bg-lightblack hover:opacity-50 md:rounded-[8px] md:py-[10px] md:px-[14px] sm:rounded-[6px] sm:py-[8px] sm:px-[10px] s:rounded-[5px] s:py-[7px] s:px-[8px]"
             >
               <img
@@ -70,9 +70,10 @@
                 src="../assets/plus.png"
                 alt="plus image"
               />
-            </button>
+            </router-link>
           </div>
         </li>
+        <button class="text-lightblack opacity-[70%] ">View All </button>
       </ul>
     </div>
   </div>
@@ -82,7 +83,6 @@ import axios from "axios";
 export default {
   data() {
     return {
-      posts: [],
       products: [],
     };
   },
@@ -90,8 +90,8 @@ export default {
     this.fetchProjectList();
   },
   methods: {
-    fetchProjectList() {
-      axios
+    async fetchProjectList() {
+      await axios
         .get("https://fakestoreapi.com/products")
         .then((res) => {
           this.products = res.data;
