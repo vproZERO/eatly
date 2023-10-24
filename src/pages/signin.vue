@@ -174,6 +174,7 @@ export default {
       localStorage.getItem("token") != "" &&
       localStorage.getItem("token") != null
     ) {
+      this.$router.push("/home");
       Swal.fire({
         icon: "info",
         title: "Siz registratsiyadan otkansiz!",
