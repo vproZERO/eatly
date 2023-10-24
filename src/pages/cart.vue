@@ -8,7 +8,7 @@
       >
         <div class="flex items-center gap-[10px]">
           <div class="lg:w-[98px] sm:w-[70px] s:w-[59px]">
-            <img src="{{product.image}}" alt="" />
+            <img src="../assets/logo.png" alt="" />
           </div>
           <div>
             <h2
